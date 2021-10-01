@@ -1,4 +1,3 @@
-// package-kenttä määrittää tiedoston sijaitsevan tietyssä paketissa.
 package week2;
 
 // public-avainsana kertoo luokan olevan koko muun ohjelmiston nähtävissä
