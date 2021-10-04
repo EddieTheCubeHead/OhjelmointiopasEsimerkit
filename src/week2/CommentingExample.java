@@ -22,7 +22,7 @@ public class CommentingExample { // Luokan määritelmän jälkeen laitettu komm
     joskin se ei näytä kovin mukavalta ja on hankalampi lukea.
      */
 
-    public static void main(){
+    public static void main(String[] args){
 
         // /*-merkillä aloitetut kommentit voivat sijaita myös koodirivin alussa tai keskellä.
         // Tällainen asettelu toimii kunhan kommentit eivät katkaise avainsanoja.
