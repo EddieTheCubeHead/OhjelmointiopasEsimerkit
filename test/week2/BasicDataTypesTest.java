@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class BasicDataTypesTest {
 
     @Test
-    void has_all_fields() {
+    void hasAllFields() {
         var typeTest = new BasicDataTypes();
         Assert.assertTrue(typeTest.booleanValue);
         Assert.assertEquals(typeTest.maxByteValue, Byte.MAX_VALUE);

@@ -7,17 +7,19 @@ import java.util.Arrays;
 import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CommentingExampleTest {
+class AccessModifierExampleMainTest {
 
     @Test
-    void main() {
+    void mainWhenCalledThenFirstClassStringPrinted() {
         String text = null;
         try {
-            text = tapSystemOut(() -> CommentingExample.main(new String[0]));
+            text = tapSystemOut(() -> AccessModifierExampleMain.main(new String[0]));
         } catch (Exception e) {
             fail(Arrays.toString(e.getStackTrace()));
         }
 
-        assertEquals("Toimii\r\n", text);
+        String expectedString = new AccessModifierExampleFirstChild().publicString;
+
+        assertEquals(expectedString + "\r\n", text);
     }
 }

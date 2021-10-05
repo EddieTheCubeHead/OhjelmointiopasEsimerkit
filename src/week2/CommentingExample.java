@@ -9,7 +9,7 @@
 
 package week2; // Pakettimääritelmä toimii vaikka sitä seuraa kommentti
 
-public class CommentingExample { // Luokan määritelmän jälkeen laitettu kommentti toimii myös
+class CommentingExample { // Luokan määritelmän jälkeen laitettu kommentti toimii myös
 
     /* Toinen tapa kommentoida on ympäröidä kommentti kauttaviivoilla ja tähdillä tähän tapaan */
 

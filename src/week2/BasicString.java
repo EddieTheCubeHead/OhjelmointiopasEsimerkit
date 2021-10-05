@@ -1,6 +1,6 @@
 package week2;
 
-public class BasicString {
+class BasicString {
 
     public static void main(String[] args){
         String exampleString = "Merkkijonoesimerkki";

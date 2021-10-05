@@ -1,7 +1,7 @@
 package week2;
 
 // Luokan luonnin notaatio käydään läpi myöhemmin tässä luvussa
-public class BasicDataTypes {
+class BasicDataTypes {
 
     // Primitiivisten tietotyyppien luominen
 

@@ -13,7 +13,7 @@ class BasicStringTest {
     void main() {
         String text = null;
         try {
-            text = tapSystemOut(BasicString::main);
+            text = tapSystemOut(() -> BasicString.main(new String[0]));
         } catch (Exception e) {
             fail(Arrays.toString(e.getStackTrace()));
         }

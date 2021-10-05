@@ -14,7 +14,7 @@ class HelloWorldTest {
     void main() {
         String text = null;
         try {
-            text = tapSystemOut(HelloWorld::main);
+            text = tapSystemOut(() -> HelloWorld.main(new String[0]));
         } catch (Exception e) {
             fail(Arrays.toString(e.getStackTrace()));
         }
