@@ -29,7 +29,7 @@ class CommentingExample { // Luokan määritelmän jälkeen laitettu kommentti t
         // Tämä ei ole suositeltavaa viimeistellyssä koodissa, mutta saatta olla hyödyllistä
         // kehitysvaiheessa.
 
-        /* Tämä toimii */ System.out.println(/* Tämäkin toimii */"Toimii");
+        /* Tämä toimii */ System.out.println(/* Tämäkin toimii */"This works");
     }
 }
 

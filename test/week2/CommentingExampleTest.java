@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CommentingExampleTest {
 
     @Test
-    void main() {
+    void mainWhenCalledPrintsThisWorks() {
         String text = null;
         try {
             text = tapSystemOut(() -> CommentingExample.main(new String[0]));
@@ -18,6 +18,6 @@ class CommentingExampleTest {
             fail(Arrays.toString(e.getStackTrace()));
         }
 
-        assertEquals("Toimii\r\n", text);
+        assertEquals("This works\r\n", text);
     }
 }

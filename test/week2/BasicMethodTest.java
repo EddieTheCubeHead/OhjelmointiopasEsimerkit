@@ -5,20 +5,20 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
-class HelloWorldTest {
+class BasicMethodTest {
 
     @Test
-    void mainWhenCalledPrintsHelloWorld() {
+    void mainWhenCalledThenHelloWorldPrinted() {
         String text = null;
         try {
-            text = tapSystemOut(() -> HelloWorld.main(new String[0]));
+            text = tapSystemOut(() -> BasicMethod.main(new String[0]));
         } catch (Exception e) {
             fail(Arrays.toString(e.getStackTrace()));
         }
 
         assertEquals("Hello world!\r\n", text);
     }
+
 }

@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BasicStringTest {
 
     @Test
-    void main() {
+    void mainWhenCalledPrintsExampleString() {
         String text = null;
         try {
             text = tapSystemOut(() -> BasicString.main(new String[0]));
@@ -18,6 +18,6 @@ class BasicStringTest {
             fail(Arrays.toString(e.getStackTrace()));
         }
 
-        assertEquals("Merkkijonoesimerkki\r\n", text);
+        assertEquals("Example string\r\n", text);
     }
 }
