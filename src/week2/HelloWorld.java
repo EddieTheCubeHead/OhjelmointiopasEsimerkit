@@ -11,8 +11,7 @@ class HelloWorld {
     // että tiedostaa main-metodin vaadittavan olevan muotoa "public static void"
     public static void main(String[] args){
 
-        // Tämä kutsu vastaa suunnilleen pythonin "print()"-kutsua.
-        // Kutsun tarkka syntaksi ja toiminta käydään läpi myöhemmin tässä luvussa.
+        // Kutsu println-funktioon tulostaa annetun merkkijonon ja rivinvaihdon
         System.out.println("Hello world!");
     }
 }

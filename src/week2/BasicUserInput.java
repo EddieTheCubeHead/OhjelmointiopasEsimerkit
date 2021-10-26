@@ -14,8 +14,8 @@ public class BasicUserInput {
         // Luodaan BufferedReader äsken luodun merkkijonovirran ympärille puskuroimaan lukuoperaatio
         BufferedReader bufferedReader = new BufferedReader(defaultInputReader);
 
-        // Luodaan Scanner, joka lukee edellä luotua puskuroitua lukujonoa. Näin luodun Scanner-
-        // olion nextLine-metodia voidaan nyt käyttää käyttäjäsyötteen noutamiseen.
+        // Luodaan Scanner, joka lukee edellä luotua puskuroitua merkkijonovirtaa. Näin luodun
+        // Scanner-olion nextLine-metodia voidaan nyt käyttää käyttäjäsyötteen noutamiseen.
         Scanner bufferedScanner = new Scanner(bufferedReader);
 
         // Käytetään uutta Scanner-oliota käyttäjän nimen kysymiseen.
