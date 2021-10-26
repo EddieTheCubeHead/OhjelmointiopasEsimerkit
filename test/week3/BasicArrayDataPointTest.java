@@ -1,6 +1,7 @@
-package week2;
+package week3;
 
 import org.junit.jupiter.api.Test;
+import week3.BasicArrayDataPoint;
 
 import static org.junit.jupiter.api.Assertions.*;
 
