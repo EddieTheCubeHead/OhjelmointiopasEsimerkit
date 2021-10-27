@@ -2,7 +2,7 @@ package week3;
 
 public class BasicForLoop {
 
-    public static void main(String[] strings) {
+    public static void main(String[] args) {
 
         // For-looppi, joka iteroi luvut 0-9 muuttujassa i
         for(int i = 0; i < 10; i++) {
