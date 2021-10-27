@@ -2,7 +2,6 @@ package week3;
 
 public class BasicDoWhileLoop {
 
-    @SuppressWarnings({"LoopConditionNotUpdatedInsideLoop", "ConstantConditions"})
     public static void main(String[] args) {
 
         int number = 0;
@@ -11,6 +10,7 @@ public class BasicDoWhileLoop {
         // runko ajetaan ainakin kertaalleen, vaikka toistoehto olisi koko ajan epätosi.
         do {
             System.out.println("Inside do while loop.");
-        } while(number > 0);
+            number++;
+        } while(number < 0);
     }
 }
