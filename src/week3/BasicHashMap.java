@@ -1,5 +1,7 @@
 package week3;
 
+// Huomioi HashMap-luokan tuominen nimitilaan import-lauseella. Tämä on pakollista aina
+// luokkaa käytettäessä
 import java.util.HashMap;
 
 public class BasicHashMap {
