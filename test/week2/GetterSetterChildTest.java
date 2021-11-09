@@ -32,7 +32,8 @@ class GetterSetterChildTest {
         try {
             text = tapSystemOut(() -> this.getterSetter.setPositiveNumber(invalidNumber));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("A positive number is required.\r\n", text);

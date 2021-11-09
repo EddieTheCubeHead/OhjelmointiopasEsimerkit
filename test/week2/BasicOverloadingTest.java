@@ -15,7 +15,8 @@ class BasicOverloadingTest {
         try {
             text = tapSystemOut(() -> BasicOverloading.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("String: Example string\r\nint: 17\r\n", text);

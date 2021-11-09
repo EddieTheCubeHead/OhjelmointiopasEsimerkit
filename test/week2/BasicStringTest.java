@@ -15,7 +15,8 @@ class BasicStringTest {
         try {
             text = tapSystemOut(() -> BasicString.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("Example string\r\n", text);

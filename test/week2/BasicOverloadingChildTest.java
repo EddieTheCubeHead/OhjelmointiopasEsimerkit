@@ -23,7 +23,8 @@ class BasicOverloadingChildTest {
         try {
             text = tapSystemOut(() -> child.print("Test string"));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("String: Test string\r\n", text);

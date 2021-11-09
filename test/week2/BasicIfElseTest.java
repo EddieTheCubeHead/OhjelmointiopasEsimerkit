@@ -14,7 +14,8 @@ class BasicIfElseTest {
         try {
             text = tapSystemOut(() -> BasicIfElse.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("Number is bigger than 2 but smaller than 5.\r\n", text);

@@ -16,7 +16,8 @@ class BasicArrayTest {
         try {
             text = tapSystemOut(() -> BasicArray.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         String expectedText =

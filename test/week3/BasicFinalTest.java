@@ -15,7 +15,8 @@ class BasicFinalTest {
         try {
             text = tapSystemOut(() -> BasicFinal.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("Constant string data\r\n", text);

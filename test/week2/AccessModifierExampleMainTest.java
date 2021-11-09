@@ -15,7 +15,8 @@ class AccessModifierExampleMainTest {
         try {
             text = tapSystemOut(() -> AccessModifierExampleMain.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         String expectedString = new AccessModifierExampleFirstChild().publicString;

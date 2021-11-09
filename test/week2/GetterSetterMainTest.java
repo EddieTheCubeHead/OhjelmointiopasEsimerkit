@@ -15,7 +15,8 @@ class GetterSetterMainTest {
         try {
             text = tapSystemOut(() -> GetterSetterMain.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("2021\r\n", text);

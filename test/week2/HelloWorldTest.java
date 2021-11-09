@@ -16,7 +16,8 @@ class HelloWorldTest {
         try {
             text = tapSystemOut(() -> HelloWorld.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("Hello world!\r\n", text);

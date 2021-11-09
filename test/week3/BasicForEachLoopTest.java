@@ -15,7 +15,8 @@ class BasicForEachLoopTest {
         try {
             text = tapSystemOut(() -> BasicForEachLoop.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         String expectedText =

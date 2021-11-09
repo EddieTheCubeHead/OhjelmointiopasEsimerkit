@@ -15,7 +15,8 @@ class BasicCastingTest {
         try {
             text = tapSystemOut(() -> BasicCasting.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("Pi as int: 3\r\n", text);

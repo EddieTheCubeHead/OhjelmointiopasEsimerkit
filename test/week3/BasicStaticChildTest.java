@@ -16,7 +16,8 @@ class BasicStaticChildTest {
         try {
             text = tapSystemOut(() -> BasicStaticChild.prettyPrint(testString));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("### " + testString + " ###\r\n", text);

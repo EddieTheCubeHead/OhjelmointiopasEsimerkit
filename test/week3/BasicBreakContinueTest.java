@@ -15,7 +15,8 @@ class BasicBreakContinueTest {
         try {
             text = tapSystemOut(() -> BasicBreakContinue.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         String expectedText = "2\r\n4\r\n6\r\n8\r\n10\r\n12\r\n14\r\n16\r\n18\r\n";

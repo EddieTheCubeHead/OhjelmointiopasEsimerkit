@@ -15,7 +15,8 @@ class CommentingExampleTest {
         try {
             text = tapSystemOut(() -> CommentingExample.main(new String[0]));
         } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
+            e.printStackTrace();
+            fail();
         }
 
         assertEquals("This works\r\n", text);
