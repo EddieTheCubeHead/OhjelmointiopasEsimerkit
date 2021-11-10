@@ -3,13 +3,9 @@ package addressbookexample;
 import org.junit.After;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import week2.BasicUserInput;
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.nio.CharBuffer;
 import java.util.Arrays;
-import java.util.Scanner;
 
 import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
 import static org.junit.jupiter.api.Assertions.*;
@@ -43,7 +39,11 @@ class AddressBookTest {
             fail(Arrays.toString(e.getStackTrace()));
         }
 
-        String expectedText = AddressBook.menuText +
+        String expectedText = "Please choose what you want to do:\r\n" +
+                              "  0: Exit program\r\n" +
+                              "  1: Add a new contact\r\n" +
+                              "  2: Read a contact from the book\r\n" +
+                              "Please input your choice: " +
                               "Terminating the program: Thank you for using it!\r\n";
 
         assertEquals(expectedText, text);
@@ -62,15 +62,22 @@ class AddressBookTest {
             fail(Arrays.toString(e.getStackTrace()));
         }
 
-        String expectedText = "Unknown choice: please give a whole number between 0 and 1\r\n";
+        String expectedText = "Unknown choice: please give a whole number between 0 and 2\r\n";
         assertEquals(expectedText, text);
     }
 
     @Test
-    void performOperationWhenGivenOneThenAddContactFromManagerCalled() {
+    void performOperationGivenOneThenAddContactFromManagerCalled() {
         boolean termination = AddressBook.performOperation(1, contactManager);
         assertFalse(termination);
         verify(this.contactManager, times(1)).addUser();
+    }
+
+    @Test
+    void performOperationGivenTwoThenAddContactFromManagerCalled() {
+        boolean termination = AddressBook.performOperation(2, contactManager);
+        assertFalse(termination);
+        verify(this.contactManager, times(1)).getUser();
     }
 
     @After

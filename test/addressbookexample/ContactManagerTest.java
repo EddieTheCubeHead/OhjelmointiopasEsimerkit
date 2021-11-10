@@ -1,11 +1,8 @@
 package addressbookexample;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
@@ -25,8 +22,8 @@ class ContactManagerTest {
             fail();
         }
 
-        String expectedText = "Please give the name of the contact to add: \r\n" +
-                              "Please give the number of 'Test': \r\n" +
+        String expectedText = "Please give the name of the contact to add: " +
+                              "Please give the number of 'Test': " +
                               "Added user 'Test' with number '1'\r\n";
         assertEquals(expectedText, text);
     }
@@ -43,7 +40,7 @@ class ContactManagerTest {
             fail();
         }
 
-        String expectedText = "Please input the name of the contact you want to find: \r\n" +
+        String expectedText = "Please input the name of the contact you want to find: " +
                               "Contact 'Test', number: 1\r\n";
         assertEquals(expectedText, text);
     }
@@ -60,7 +57,7 @@ class ContactManagerTest {
             fail();
         }
 
-        String expectedText = "Please input the name of the contact you want to find: \r\n" +
+        String expectedText = "Please input the name of the contact you want to find: " +
                               "Contact 'Test', number: 1\r\n";
         assertEquals(expectedText, text);
     }
@@ -77,8 +74,8 @@ class ContactManagerTest {
             fail();
         }
 
-        String expectedText = "Please give the name of the contact to add: \r\n" +
-                              "Please give the number of 'Test': \r\n" +
+        String expectedText = "Please give the name of the contact to add: " +
+                              "Please give the number of 'Test': " +
                               "Error: Contact 'Test' already exists!\r\n";
         assertEquals(expectedText, text);
     }
@@ -94,7 +91,7 @@ class ContactManagerTest {
             fail();
         }
 
-        String expectedText = "Please input the name of the contact you want to find: \r\n" +
+        String expectedText = "Please input the name of the contact you want to find: " +
                               "Could not find a contact named 'Test'.\r\n";
         assertEquals(expectedText, text);
     }

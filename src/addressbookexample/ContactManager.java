@@ -8,15 +8,18 @@ public class ContactManager {
     private final Scanner scanner;
     private final HashMap<String, String> addressBook = new HashMap<>();
 
+    // On helpompaa luoda koko ohjelmalle yksi Scanner-instanssi, kuin huolehtia monesta
+    // instanssista. Sen vuoksi ContactManagerin rakentaja ottaa pääluokasta Scannerin
     public ContactManager(Scanner scanner) {
         this.scanner = scanner;
     }
 
     public void addUser() {
-        System.out.println("Please give the name of the contact to add: ");
+        System.out.print("Please give the name of the contact to add: ");
         String contactName = scanner.nextLine();
-        System.out.println("Please give the number of '" + contactName + "': ");
+        System.out.print("Please give the number of '" + contactName + "': ");
         String number = scanner.nextLine();
+        // Virheenhallinta identtisille avaimille
         if (addressBook.containsKey(contactName)) {
             System.out.println("Error: Contact '" + contactName + "' already exists!");
             return;
@@ -26,9 +29,10 @@ public class ContactManager {
     }
 
     public void getUser() {
-        System.out.println("Please input the name of the contact you want to find: ");
+        System.out.print("Please input the name of the contact you want to find: ");
         String contactName = scanner.nextLine();
         String contactNumber = addressBook.get(contactName);
+        // Virheenhallinta puuttuville avaimille
         if (contactNumber == null) {
             System.out.println("Could not find a contact named '" + contactName + "'.");
             return;
