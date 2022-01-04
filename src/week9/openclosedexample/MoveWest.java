@@ -1,0 +1,8 @@
+package week9.openclosedexample;
+
+public class MoveWest implements MovementCommand {
+    @Override
+    public void movePlayer(Player player) {
+        player.setY(player.getY() - 1);
+    }
+}
