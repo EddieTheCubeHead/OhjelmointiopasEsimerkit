@@ -11,7 +11,7 @@ public class Main {
         BufferedReader bufferedReader = new BufferedReader(defaultInputReader);
         Scanner bufferedScanner = new Scanner(bufferedReader);
         DatabaseConnection connection = new DatabaseConnection();
-        
+
         System.out.println("Please input the entry you want to search: ");
         String key = bufferedScanner.nextLine();
         try {
