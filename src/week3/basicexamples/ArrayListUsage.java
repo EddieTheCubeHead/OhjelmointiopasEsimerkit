@@ -1,7 +1,6 @@
 package week3.basicexamples;
 
-// Huomioi ArrayList-luokan tuominen nimitilaan import-lauseella. Tämä on pakollista aina
-// luokkaa käytettäessä
+// Huomioi tarve tuoda ArrayList tiedoston nimitilaan import-avainsanalla
 import java.util.ArrayList;
 
 public class ArrayListUsage {

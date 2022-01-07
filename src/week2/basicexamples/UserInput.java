@@ -1,5 +1,7 @@
 package week2.basicexamples;
 
+// Huomioi tarvittavien luokkien tuominen nimitilaan import-lauseella. Tämä on pakollista yleensä
+// käytettäessä javan standardikirjaston tarjoamia luokkia: String on huomattava poikkeus tähän.
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Scanner;
