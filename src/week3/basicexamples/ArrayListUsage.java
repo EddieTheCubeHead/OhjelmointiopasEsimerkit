@@ -22,7 +22,9 @@ public class ArrayListUsage {
         // Printtaa "First Second Third", koska alkio "Second" lisättiin indeksiin 1
         System.out.println(entries.get(0) + " " + entries.get(1) + " " + entries.get(2));
 
-        // Poistaminen toimii joko määrittelemällä poistettava alkio tai alkion indeksi
+        // Poistaminen toimii joko määrittelemällä poistettava alkio tai alkion indeksi. Mikäli
+        // poistaminen tehdään määrittelemällä alkio, etsii ohjelma ensimmäisen alkion, joka on
+        // identtinen annetun alkion kanssa ja poistaa löydetyn alkion.
         entries.remove("Second");
         entries.remove(0);
 
