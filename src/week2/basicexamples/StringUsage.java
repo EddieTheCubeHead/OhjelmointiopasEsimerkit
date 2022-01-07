@@ -1,9 +1,7 @@
 package week2.basicexamples;
 
 class StringUsage {
-
-    public static void main(java.lang.String[] args){
-        java.lang.String exampleString = "Example string";
-        System.out.println(exampleString);
-    }
+    // Huomaa, että char-muttuja suljetaan yksittäisiin lainausmerkkeihin (') ja String-muuttuja
+    // tuplattuihin launausmerkkeihin (")
+    String exampleString = "Example string";
 }
