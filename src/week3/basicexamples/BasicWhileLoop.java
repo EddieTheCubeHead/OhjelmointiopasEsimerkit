@@ -4,7 +4,7 @@ public class BasicWhileLoop {
 
     public static void main(String[] args) {
 
-        // Wnile-looppia käytettäessä toistoehdon sisältävät muuttujat on määriteltävä ennen looppia
+        // Wnile-looppia käytettäessä toistoehdon sisältämät muuttujat on määriteltävä ennen looppia
         int number = 0;
 
         // Toistoehto olisi yleensä sidottu esimerkiksi käyttäjän syötteeseen tai muuhun
