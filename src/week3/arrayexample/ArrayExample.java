@@ -32,7 +32,7 @@ public class ArrayExample {
         // Luetaan data instansseista.
         System.out.println(
                 "First entry (index 0): '" + dataPoints[0].courseName
-                        + "', year: " + dataPoints[0].recommendedYear +"\r\n" +
+                        + "', year: " + dataPoints[0].recommendedYear + "\r\n" +
                 "Second entry (index 1): '" + dataPoints[1].courseName
                         + "', year: " + dataPoints[1].recommendedYear + "\r\n" +
                 "Third entry (index 2): '" + dataPoints[2].courseName

@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class ArrayListUsage {
 
     public static void main(String[] args) {
-        // Java osaa päätellä ArrayListin sisältämän luokan tyypin, mikäli muuttuja määritellään
-        // ja lista luodaan samalla rivillä. Tästä syystä new ArrayList<>() ei tarvitse String-
-        // lisäystä.
+        // Java osaa päätellä ArrayListin sisältämän luokan tyypin, mikäli instanssi asetetaan
+        // muuttujaan, jonka täysi tyyppi on määritelty (lista + säilötty tyyppi). Tästä syystä
+        // "new ArrayList<>()" ei tarvitse String-tyyppiä <>-merkkien väliin.
         ArrayList<String> entries = new ArrayList<>();
 
         // Lisääminen listan loppuun tapahtuu pelkällä add-metodilla
