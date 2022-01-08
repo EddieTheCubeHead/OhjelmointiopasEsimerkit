@@ -2,7 +2,7 @@ package week2.basicexamples;
 
 // public-avainsana kertoo luokan olevan koko muun ohjelmiston nähtävissä
 //
-// class-avainsana aloittaa luokan määritelmän. Sitä seuraa luokan nimi ja hakasulkeisiin suljettu
+// class-avainsana aloittaa luokan määritelmän. Sitä seuraa luokan nimi ja aaltosulkeisiin suljettu
 // luokan runko. Pääluokan nimeä ei ole etukäteen määritelty ja onkin suositeltavaa nimetä se
 // kuvailevasti, esimerkiksi koko ohjelman nimen mukaisesti.
 class HelloWorld {
