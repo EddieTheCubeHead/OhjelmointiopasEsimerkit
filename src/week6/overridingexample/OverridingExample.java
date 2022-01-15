@@ -2,9 +2,9 @@ package week6.overridingexample;
 
 public class OverridingExample {
     public static void main(String[] strings) {
-        Parent parentClass = new Parent();
-        Parent childClass = new Child();
-        System.out.println(parentClass.addText("Called from "));
-        System.out.println(childClass.addText("Called from "));
+        Parent parentObject = new Parent();
+        Parent childObject = new Child();
+        System.out.println(parentObject.addText("Called from "));
+        System.out.println(childObject.addText("Called from "));
     }
 }
