@@ -27,7 +27,7 @@ public class BasicFileInputOutputStream {
             // Tavumuotoisen datan haku tiedostosta tavutaulukkoon
             byte[] fileContent = fileInputStream.readAllBytes();
             // Muutetaan taulukko tekstiksi tulostamista varten. Tämä ei tulosta tekstiä 'Test',
-            // vaan kirjainten tavurepresnetaatiot. Tulostaa: '[84, 101, 115, 116]'
+            // vaan kirjainten char-tyyppiset numerorepresnetaatiot. Tulostaa: '[84, 101, 115, 116]'
             System.out.println(Arrays.toString(fileContent));
         }  catch (IOException exception) {
             System.out.println("An exception occurred while reading the file!");
