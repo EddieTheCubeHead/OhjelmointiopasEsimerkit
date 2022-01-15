@@ -9,14 +9,15 @@ import java.util.Scanner;
 public class UserInput {
 
     public static void main(String[] args) {
-        // Luodaan InputStreamReader System.in -streamin ympärille muuttamaan System.in tavuvirrasta
-        // merkkijonovirraksi
+        // Luodaan InputStreamReader-olio System.in -streamin ympärille muuttamaan System.in
+        // tavuvirrasta merkkijonovirraksi
         InputStreamReader defaultInputReader = new InputStreamReader(System.in);
 
-        // Luodaan BufferedReader äsken luodun merkkijonovirran ympärille puskuroimaan lukuoperaatio
+        // Luodaan BufferedReader-olio äsken luodun merkkijonovirran ympärille puskuroimaan
+        // lukuoperaatio
         BufferedReader bufferedReader = new BufferedReader(defaultInputReader);
 
-        // Luodaan Scanner, joka lukee edellä luotua puskuroitua merkkijonovirtaa. Näin luodun
+        // Luodaan Scanner-olio, joka lukee edellä luotua puskuroitua merkkijonovirtaa. Näin luodun
         // Scanner-olion nextLine-metodia voidaan nyt käyttää käyttäjäsyötteen noutamiseen.
         Scanner bufferedScanner = new Scanner(bufferedReader);
 

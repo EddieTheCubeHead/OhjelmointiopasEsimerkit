@@ -2,9 +2,9 @@ package week2.basicexamples;
 
 public class IfElse {
 
-    // Tästä ei tarvitse välittää. Ainut tämän rivin tarkoitus on estää IDE:tä, jolla esimerkkikoodi
-    // on kirjoitetta huomauttamasta if-lauseista, joiden sisällä olevan ehdon totuusarvo tiedetään
-    // koodia kääntäessä.
+    // Seuraavasta ei-kommenttirivistä ei tarvitse välittää. Ainoa tämän rivin tarkoitus on estää
+    // IDE:tä, jolla esimerkkikoodi on kirjoitetta huomauttamasta if-lauseista, joiden sisällä
+    // olevan ehdon totuusarvo tiedetään koodia kääntäessä.
     @SuppressWarnings("ConstantConditions")
     public static void main(String[] strings) {
         int number = 3;
