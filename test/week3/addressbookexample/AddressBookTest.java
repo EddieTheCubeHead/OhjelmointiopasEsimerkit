@@ -50,37 +50,6 @@ class AddressBookTest {
         assertEquals(expectedText, text);
     }
 
-    @Test
-    void performOperationWhenGivenInvalidNumberThenErrorPrinted() {
-        String text = null;
-        try {
-            text = tapSystemOut(() ->
-            {
-                boolean termination = AddressBook.performOperation(-1, contactManager);
-                assertFalse(termination);
-            });
-        } catch (Exception e) {
-            fail(Arrays.toString(e.getStackTrace()));
-        }
-
-        String expectedText = "Unknown choice: please give a whole number between 0 and 2\r\n";
-        assertEquals(expectedText, text);
-    }
-
-    @Test
-    void performOperationGivenOneThenAddContactFromManagerCalled() {
-        boolean termination = AddressBook.performOperation(1, contactManager);
-        assertFalse(termination);
-        verify(this.contactManager, times(1)).addUser();
-    }
-
-    @Test
-    void performOperationGivenTwoThenAddContactFromManagerCalled() {
-        boolean termination = AddressBook.performOperation(2, contactManager);
-        assertFalse(termination);
-        verify(this.contactManager, times(1)).getUser();
-    }
-
     @After
     public void restoreSystemInputOutput() {
         System.setIn(systemIn);

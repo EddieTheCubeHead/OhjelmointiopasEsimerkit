@@ -9,7 +9,7 @@ public class BreakContinue {
         int maxNumber = 20;
         int currentNumber = 0;
 
-        // while(true) luo ikuisen loopin. Ainut tapa päästä loopista pois on break-avainsana
+        // while(true) luo ikuisen silmukan. Ainut tapa päästä silmukasta pois on break-avainsana
         while(true) {
             currentNumber++;
             // Poistumisehto break-avainsanalla
@@ -17,8 +17,8 @@ public class BreakContinue {
                 break;
             }
 
-            // Käytetään modulomuuttujaa parillisuuden selvittämiseen ja skipataan loput loopista,
-            // mikäli luku ei ole parillinen
+            // Käytetään modulo-operaattoria parillisuuden selvittämiseen ja skipataan loput
+            // silmukasta, mikäli luku ei ole parillinen
             if (currentNumber % 2 == 1) {
                 continue;
             }

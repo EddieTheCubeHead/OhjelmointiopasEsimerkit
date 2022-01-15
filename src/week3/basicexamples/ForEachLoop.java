@@ -10,7 +10,7 @@ public class ForEachLoop {
                 "Saturday", "Sunday"};
 
         // Jokainen taulukon alkio sidotaan vuodollaan String-tyypin weekday-muuttujaan
-        // Muuttuja on käytettävissä vain loopin sisällä
+        // Muuttuja on käytettävissä vain silmukan sisällä
         // Printtaa viikonpäivät taulukosta, jokaisen omalle rivilleen
         for(String weekday : weekdays) {
             System.out.println(weekday);

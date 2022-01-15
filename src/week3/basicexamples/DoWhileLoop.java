@@ -6,8 +6,8 @@ public class DoWhileLoop {
 
         int number = 0;
 
-        // Do-while -loopissa toistoehto tarkastetaan vasta loopin rungon jälkeen. Täten loopin
-        // runko ajetaan ainakin kertaalleen, vaikka toistoehto olisi koko ajan epätosi.
+        // Do-while-silmukassa toistoehto tarkastetaan vasta silmukan rungon jälkeen. Täten runko
+        // ajetaan ainakin kertaalleen, vaikka toistoehto olisi koko ajan epätosi.
         do {
             System.out.println("Inside do while loop.");
             number++;
