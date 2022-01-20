@@ -1,4 +1,4 @@
-package week3.staticexample;
+package week8.staticexample;
 
 public class StaticPrinter {
 

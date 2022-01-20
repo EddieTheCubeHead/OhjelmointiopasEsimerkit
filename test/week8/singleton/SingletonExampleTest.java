@@ -1,7 +1,7 @@
-package week8;
+package week8.singleton;
 
 import org.junit.jupiter.api.Test;
-import week8.SingletonExample;
+import week8.singleton.SingletonExample;
 
 import static org.junit.jupiter.api.Assertions.*;
 

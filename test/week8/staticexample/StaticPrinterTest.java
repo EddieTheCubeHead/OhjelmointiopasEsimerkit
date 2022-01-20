@@ -1,4 +1,4 @@
-package week3.staticexample;
+package week8.staticexample;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,18 +6,20 @@ import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class StaticExampleTest {
+class StaticPrinterTest {
 
     @Test
-    void mainWhenCalledThenTestStringPrettyPrinted() {
+    void prettyPrintWhenCalledThenPrintedWithEnhancements() {
         String text = null;
+        String testString = "Example string";
         try {
-            text = tapSystemOut(() -> StaticExample.main(new String[0]));
+            text = tapSystemOut(() -> StaticPrinter.prettyPrint(testString));
         } catch (Exception e) {
             e.printStackTrace();
             fail();
         }
 
-        assertEquals("### Example string ###\r\n", text);
+        assertEquals("### " + testString + " ###\r\n", text);
     }
+
 }
